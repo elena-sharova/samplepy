@@ -83,14 +83,14 @@ Example using Metropolis-Hastings sampling.
  """
  Metropolis-Hastings sampling with normal proposal dist
  """
-
+ # define a unimodal function to sample under
  f = lambda x: 0.4*np.exp(-(x-0.3)**2/2.0)
 
- mh = MH(f, [-3.0, 3.0])
+ mh = MH(f, [-3.0, 3.0])  # use symmetric (-3.0, +3.0) interval
  # sample from MH with a burn-in period of 100 and lag of 1 (optionally set rand seed)
  sample = mh.sample(20000, 100, 1)  # Make sure we have enough points in the sample!
 
- x = np.arange(-3.0, 3.0, (3.0--3.0)/20000)
+ x = np.arange(-3.0, 3.0, (3.0- -3.0)/20000)
  fx = f(x)
 
  figure, axis = plt.subplots()
@@ -116,12 +116,13 @@ Example using importance sampling.
  """
  Importance sampling with 5th quantile oversampled from
  """
+ # define a unimodal function to sample under
  f = lambda x: np.exp(-1.0*x**2)*(2.0+np.sin(5.0*x)+np.sin(2.0*x))
 
- imp = Importance(f, [-3.0, 3.0])
+ imp = Importance(f, [-3.0, 3.0]) # use symmetric interval
  sample = imp.sample(10000, 0.05, 0.02) # create a sample where 5th quantile is oversampled with a 2% weight
 
- x = np.arange(-3.0, 3.0, (3.0--3.0)/3000)
+ x = np.arange(-3.0, 3.0, (3.0- -3.0)/3000)
  fx = f(x)
 
  figure, axis = plt.subplots()
