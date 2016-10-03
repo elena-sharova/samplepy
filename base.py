@@ -6,10 +6,11 @@
 @open source distribution licence: MIT
 
 """
+import copy
 
 import numpy as np
 import matplotlib.pyplot as plt
-import copy
+
 from scipy.misc import derivative
 from types import LambdaType
 from math import isnan, log
@@ -30,10 +31,11 @@ class _BaseSampling(object):
         
         if interval[0]< interval[1]:
             try:
-                assert not isnan(derivative(f, interval[1], dx=1e-6))
-                assert not isnan(derivative(f, interval[0], dx=1e-6))
+                if not isnan(derivative(f, interval[1], dx=1e-6)) and not isnan(derivative(f, interval[0], dx=1e-6)):
+                    return True
+                else:
+                    return False
                 
-                return True
             except:
                 raise ValueError("The function is not defined over the entire interval.")
         else:
