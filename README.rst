@@ -134,3 +134,10 @@ Example using importance sampling.
 
 .. image:: examples/Impfig_1.png
    :width: 40pt
+
+Installation
+===============
+
+::
+
+    pip install samplepy
