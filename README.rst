@@ -11,7 +11,7 @@ samplepy 1.0.1
 Examples:
 =========
 
-Example using rejection sampling::
+.. code:: python
 
  from samplepy import Rejection
  import matplotlib.pyplot as plt
@@ -42,7 +42,8 @@ Output:
    :width: 40pt
 
 
-Example using rejection sampling for a roughly multi-modal distribution::
+Example using rejection sampling for a roughly multi-modal distribution.
+.. code:: python
 
  from samplepy import Rejection
  import matplotlib.pyplot as plt
@@ -70,7 +71,8 @@ Output:
 .. image:: examples/Rejfig_2.png
    :width: 40pt
 	   
-Example using Metropolis-Hastings sampling::
+Example using Metropolis-Hastings sampling.
+.. code:: python
 
  from samplepy import MH
  import matplotlib.pyplot as plt
@@ -102,7 +104,8 @@ Output:
 .. image:: examples/MHfig_1.png
    :width: 40pt
 
-Example using importance sampling::
+Example using importance sampling.
+.. code:: python
 
  from samplepy import Importance
  import matplotlib.pyplot as plt
