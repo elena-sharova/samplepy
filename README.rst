@@ -36,10 +36,10 @@ Example using rejection sampling::
  plt.show()
 
 
-	Output:
+Output:
 	
-	.. image:: examples/Rejfig_1.png
-   	   :width: 40pt
+.. image:: examples/Rejfig_1.png
+   :width: 40pt
 
 
 Example using rejection sampling for a roughly multi-modal distribution::
@@ -65,10 +65,10 @@ Example using rejection sampling for a roughly multi-modal distribution::
  plt.show()
 
 
-	Output:
+Output:
 	
-	.. image:: examples/Rejfig_2.png
-   	   :width: 40pt
+.. image:: examples/Rejfig_2.png
+   :width: 40pt
 	   
 Example using Metropolis-Hastings sampling::
 
@@ -97,10 +97,10 @@ Example using Metropolis-Hastings sampling::
  plt.show()
 
 
-	Output:
+Output:
 	
-	.. image:: examples/MHfig_1.png
-   	   :width: 40pt
+.. image:: examples/MHfig_1.png
+   :width: 40pt
 
 Example using importance sampling::
 
