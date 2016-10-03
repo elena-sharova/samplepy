@@ -1,6 +1,6 @@
-==============
-samplepy 1.0.9
-==============
+===============
+samplepy 1.0.11
+===============
 
 **samplepy** implements three sampling methods for univariate distributions. The package includes:
 
