@@ -43,6 +43,7 @@ Output:
 
 
 Example using rejection sampling for a roughly multi-modal distribution.
+
 .. code:: python
 
  from samplepy import Rejection
@@ -72,6 +73,7 @@ Output:
    :width: 40pt
 	   
 Example using Metropolis-Hastings sampling.
+
 .. code:: python
 
  from samplepy import MH
@@ -105,6 +107,7 @@ Output:
    :width: 40pt
 
 Example using importance sampling.
+
 .. code:: python
 
  from samplepy import Importance
